@@ -1,0 +1,14 @@
+h1 Login
+| Try accessing
+a(href='/restricted') /restricted
+| , then authenticate with &quot;victorze&quot; and &quot;secret&quot;.
+
+form(method='post' action='/login')
+  p
+    label(for='username') Username:
+    input(type='text' name='username')
+  p
+    label(for='password') Password:
+    input(type='password' name='password')
+  p
+    input(type='submit' value='Login')
